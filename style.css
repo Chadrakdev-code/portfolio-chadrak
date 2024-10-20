@@ -1,0 +1,87 @@
+/* Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Blanc */
+    color: #333333; /* Noir pour le texte */
+}
+
+header {
+    background-color: #7ed957; /* Vert citron */
+    color: #ffffff; /* Blanc */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* Blanc pour les liens du menu */
+    text-decoration: none;
+}
+
+header h1 {
+    color: #ffffff; /* Vert citron pour le titre */
+}
+
+section {
+    padding: px;
+    margin: 100px;
+}
+
+section#about {
+    margin-bottom: 5px;
+	text-align: justify;
+	width: 50%;
+}
+
+.img-right {
+    float: right; /* L'image flotte à droite */
+    margin-left: 20px; /* Espace entre le texte et l'image */
+    width: 250px; /* Taille personnalisée de l'image */
+}
+
+.image-texte p {
+    text-align: left;
+}
+
+section#portfolio .project {
+    margin-bottom: 5px;
+	width: 50%;
+}
+
+section h2 {
+    color: #7ed957; /* Vert citron pour les titres des sections */
+	margin-bottom: 5px;
+}
+
+footer {
+    background-color: #000000; /* Noir */
+    color: #ffffff; /* Blanc pour le texte du footer */
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+    background-color: ##7ed957; /* Boutons en vert citron */
+    color: #000000; /* Texte noir dans les boutons */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008000; /* Couleur plus foncée au survol */
+}
