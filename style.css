@@ -17,6 +17,8 @@ header {
 header nav ul {
     list-style: none;
     padding: 0;
+	display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
@@ -28,6 +30,23 @@ header nav ul li a {
     color: #ffffff; /* Blanc pour les liens du menu */
     text-decoration: none;
 }
+
+section.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+section.introduction img {
+    width: 40%;
+}
+
+section.introduction div {
+    width: 50%;
+}
+
 
 header h1 {
     color: #ffffff; /* Vert citron pour le titre */
@@ -84,4 +103,51 @@ button {
 
 button:hover {
     background-color: #008000; /* Couleur plus foncée au survol */
+}
+
+/* Responsive Design pour les tablettes */
+@media (max-width: 768px) {
+    section.introduction {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.introduction img {
+        width: 80%; /* L'image s'ajuste pour occuper plus d'espace sur tablette */
+    }
+
+    section.introduction div {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Liens de navigation en colonne sur tablette */
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Design pour les mobiles */
+@media (max-width: 480px) {
+    section.introduction {
+        padding: 20px;
+    }
+
+    section.introduction img {
+        width: 100%; /* L'image prend toute la largeur sur mobile */
+    }
+
+    section.introduction div {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
 }
